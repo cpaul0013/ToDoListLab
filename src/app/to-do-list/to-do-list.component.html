@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="to-do-list.component.css">
+</head>
+<body class="#background">
+<div class="todoBox" *ngFor="let items of todoList">
+
+<div class="inline" *ngIf="items.completed===false;"><button (click) = "completeTask(items)">Complete</button> {{ items.name }}</div>
+<div  #elseBlock class="completedTask"> {{ items.name }}</div>
+
+</div>
+
+<form #nameForm="ngForm" (ngSubmit)="addItem(nameForm)">
+    <label for="name">Add a task: </label> <br>
+    <input name="name" id="name" ngModel />
+    <button>Add to List</button>
+  </form>
+
+  
+</body>

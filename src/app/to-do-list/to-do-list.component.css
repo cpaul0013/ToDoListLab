@@ -1,0 +1,14 @@
+.completedTask{
+    text-decoration-line: line-through;
+    color:green;
+}
+
+#background{
+
+ background-color: linear-gradient(to right, #f857a6, #ff5858);
+background-size: cover;
+Box-shadow:0px 0px 5px 0px rgba(0,0,0,0.75);
+width: 100vw;
+min-height: 100vh;
+
+}
